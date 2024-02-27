@@ -106,32 +106,32 @@ bugreports:
       
   - summary: |
       В выпадающем меню смены языка не отображаются флажки стран
-  environment: |
+    environment: |
       Google Chrome 120.0.6099.225 (Официальная сборка) (64 бит)
       ОС Win 10
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Открыта главная страница
       2. Нажимаем на кнопку "Язык"
-  expected-result: |
+    expected-result: |
       В выпадающем меню видим напротив названия языка видим соответствующий значок с флагом
-  actual-result: |
+    actual-result: |
       В выпадающем меню смены языка не отображаются флажки стран
       Ошибка изображена на скриншоте Screenshots/Lang v2.png
 
-- summary: |
+  - summary: |
       Ошибка при оформлении заказа
-  environment: |
+    environment: |
       Google Chrome 120.0.6099.225 (Официальная сборка) (64 бит)
       ОС Win 10
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Открыта главная страница https://hexlet-products-store.vercel.app/
       2. Открыть DevTools
       3. Добавить товар в корзину
       4. Перейти в корзину
       5. Нажать 'Оформить заказ'
-  expected-result: |
+    expected-result: |
       Заказ успешно оформлен
-  actual-result: |
+    actual-result: |
       Ошибка ответа от сервера
       GET https://dummyjson.com/http/500/failed 500 (Internal Server Error)
       Ошибка изображена на скриншоте Screenshots/Error 500.png    
